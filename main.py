@@ -9,6 +9,8 @@ import demjson
 
 import signal
 import sys
+import socket
+
 
 class myRun:
     def __init__(self):
@@ -37,7 +39,7 @@ class myRun:
 
     def run(self, lastsave=0):
 
-
+        self.curr = lastsave
         print "Reading file, Please wait... "
         users = self.getList()
 
@@ -69,7 +71,9 @@ class myRun:
 
 
 def loadSt():
-    uname = os.getlogin()
+    # uname = os.getlogin()
+    uname = socket.gethostname()
+
     filename = "save_"+uname+".txt"
     ins = open(filename,"r")
     data = []
@@ -82,7 +86,9 @@ def loadSt():
 
 
 def saveSt():
-    uname = os.getlogin()
+    # uname = os.getlogin()
+    uname = socket.gethostname()
+
     filename = "save_"+uname+".txt"
     ins = open(filename,"w")
     ins.write(str(ooo.curr))
