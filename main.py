@@ -55,7 +55,7 @@ class myRun:
             self.end_idx = int(self.end_idx)
         else:
             self.start_idx = int(lastsave)
-            self.end_idx = self.start_idx+500
+            self.end_idx = self.start_idx+20000
 
 
         print "Total ", str(int(self.end_idx)-int(self.start_idx))
