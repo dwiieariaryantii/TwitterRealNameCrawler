@@ -10,7 +10,7 @@ import demjson
 import signal
 import sys
 import socket
-
+import time
 
 class myRun:
     def __init__(self):
@@ -18,6 +18,7 @@ class myRun:
 
         self.start_idx= 0
         self.end_idx = 0
+        self.errorlist =[]
 
     def getList(self):
         cc = 0
@@ -46,13 +47,22 @@ class myRun:
         print "-----------------------"
 
         print "Last time end at ", str(lastsave)
-        self.start_idx = raw_input("Please select your START index: (0 ~ "+ str(len(users)-1)  + "):\n")
-        self.end_idx = raw_input("Please select your ENDT index: (0 ~ "+  str(len(users)-1)+ "):\n")
-        self.start_idx = int(self.start_idx)
-        self.end_idx = int(self.end_idx)
+
+        if str(lastsave)=="0":
+            self.start_idx = raw_input("Please select your START index: (0 ~ "+ str(len(users)-1)  + "):\n")
+            self.end_idx = raw_input("Please select your ENDT index: (0 ~ "+  str(len(users)-1)+ "):\n")
+            self.start_idx = int(self.start_idx)
+            self.end_idx = int(self.end_idx)
+        else:
+            self.start_idx = int(lastsave)
+            self.end_idx = self.start_idx+500
+
+
         print "Total ", str(int(self.end_idx)-int(self.start_idx))
         for i in range(self.start_idx,self.end_idx):
             try:
+                if i%2==0:
+                    time.sleep(0.5)
                 ins = users[i]
 
 
@@ -63,8 +73,12 @@ class myRun:
                 tc.writeFile()
                 self.curr = i
                 print self.curr
+
             except Exception, e:
                 sys.stderr.write("Failed at file "+str(i)+"\n")
+                ins = users[i]
+                uid = ins['user_id']
+                self.errorlist.append(uid)
 
 
 
@@ -93,6 +107,14 @@ def saveSt():
     ins = open(filename,"w")
     ins.write(str(ooo.curr))
     ins.close()
+
+    filename = "err_"+uname+".txt"
+    ins = open(filename,"a")
+    for line in ooo.errorlist:
+        ins.write(str(line)+"\n")
+    ins.close()
+
+
 
 def signal_handler(signal, frame):
     print 'You pressed Ctrl+C!'

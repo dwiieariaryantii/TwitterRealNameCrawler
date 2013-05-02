@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="65bb1373-c08e-4ed5-a241-e01c81d97a06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/save_haowu.txt" afterPath="$PROJECT_DIR$/save_haowu.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TwitterRealNameCrawler.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="65bb1373-c08e-4ed5-a241-e01c81d97a06" time="1367481582636" ignored="false" />
-    <file path="/main.py" changelist="65bb1373-c08e-4ed5-a241-e01c81d97a06" time="1367489201728" ignored="false" />
+    <file path="/main.py" changelist="65bb1373-c08e-4ed5-a241-e01c81d97a06" time="1367490034991" ignored="false" />
     <file path="/twitterCrawler.py" changelist="65bb1373-c08e-4ed5-a241-e01c81d97a06" time="1367488063690" ignored="false" />
     <file path="/mongo.py" changelist="65bb1373-c08e-4ed5-a241-e01c81d97a06" time="1367479658332" ignored="false" />
     <file path="/split.py" changelist="65bb1373-c08e-4ed5-a241-e01c81d97a06" time="1367482277569" ignored="false" />
@@ -31,7 +31,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="8" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.8255814">
+            <state line="80" column="24" selection-start="2007" selection-end="2007" vertical-scroll-proportion="-0.6196013">
               <folding />
             </state>
           </provider>
@@ -111,34 +111,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TwitterRealNameCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterRealNameCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterRealNameCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterRealNameCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterRealNameCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,11 +346,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/list_of_users_that_have_tweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147908" column="8" selection-start="1362716" selection-end="1362716" vertical-scroll-proportion="0.8504983" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/parsed.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="29" selection-start="7061971" selection-end="7061971" vertical-scroll-proportion="0.22920203" />
@@ -479,9 +446,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/save_Haos-iMac.local.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="8" selection-start="2476" selection-end="2476" vertical-scroll-proportion="0.8255814">
+        <state line="80" column="24" selection-start="2007" selection-end="2007" vertical-scroll-proportion="-0.6196013">
           <folding />
         </state>
       </provider>
